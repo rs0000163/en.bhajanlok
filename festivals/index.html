@@ -3,406 +3,122 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Festivals - Dharma Path</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Hindi&family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<!-- ============ SEO META (English) ============ -->
+<title>Indian Festivals - Diwali, Navratri, Holi & More Hindu Celebrations | Bhajan Lok</title>
+<meta name="description" content="Explore the glory of India's sacred Hindu festivals on Bhajan Lok. Learn about Diwali, Navratri, Holi, Janmashtami, Raksha Bandhan and their history, traditions & spiritual significance.">
+<meta name="keywords" content="Indian festivals, Hindu festivals, Diwali, Navratri, Holi, Janmashtami, Raksha Bandhan, Ganesh Chaturthi, festival significance, Bhajan Lok">
+<meta name="author" content="Bhajan Lok">
+<meta name="language" content="English">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Indian Festivals - Sacred Hindu Celebrations">
+<meta property="og:description" content="Explore the glory of India's sacred festivals - their history, traditions, and spiritual significance.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta property="og:url" content="https://en.bhajanlok.in/festivals/">
+
+<!-- hreflang -->
+<link rel="alternate" hreflang="en" href="https://en.bhajanlok.in/festivals/">
+<link rel="alternate" hreflang="hi" href="https://bhajanlok.in/festivals/">
+<link rel="alternate" hreflang="x-default" href="https://bhajanlok.in/festivals/">
+
+<!-- ============ FAVICON ============ -->
+<link rel="icon" type="image/png" href="https://res.cloudinary.com/ddf8equjt/image/upload/v1779356012/0dd8ac07-a4e4-4e59-8945-90da664afa82_gs8mb2.png">
+<link rel="apple-touch-icon" href="https://res.cloudinary.com/ddf8equjt/image/upload/v1779356012/0dd8ac07-a4e4-4e59-8945-90da664afa82_gs8mb2.png">
 
 <style>
+/* ============ GLOBAL RESET + VARIABLES ============ */
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
 :root {
---primary: #1a2332;
---accent: #c89853;
---text-dark: #1a2332;
---text-muted: #6b7280;
---bg-cream: #faf8f3;
---bg-light: #ffffff;
---border: #e5e0d3;
+    --primary: #1a2332;
+    --accent: #c89853;
+    --text-dark: #1a2332;
+    --text-muted: #6b7280;
+    --bg-cream: #faf8f3;
+    --bg-light: #ffffff;
+    --border: #e5e0d3;
 }
 
 body {
-font-family: 'Mukta', 'Noto Sans Devanagari', sans-serif;
-background: var(--bg-cream);
-color: var(--text-dark);
-line-height: 1.6;
+    font-family: 'Inter', sans-serif;
+    background: var(--bg-cream);
+    color: var(--text-dark);
+    line-height: 1.6;
 }
 
 h1, h2, h3, .serif {
-font-family: 'Tiro Devanagari Hindi', 'Noto Sans Devanagari', serif;
-font-weight: 400;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 500;
 }
 
 .container {
-max-width: 1280px;
-margin: 0 auto;
-padding: 0 40px;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 40px;
 }
 
-/* TOP ANNOUNCEMENT BAR */
-.top-bar {
-    background: #fde8c9;
-    color: #8a4a0a;
-    padding: 10px 20px;
-    text-align: center;
-    font-size: 14px;
-    font-weight: 500;
-    font-family: 'Mukta', sans-serif;
-}
-
-@media (max-width: 768px) {
-    .top-bar { font-size: 12px; padding: 8px 16px; }
-}
-
-/* HEADER */
-.main-header {
-background: rgba(250, 248, 243, 0.95);
-backdrop-filter: blur(10px);
-padding: 18px 40px;
-display: flex;
-align-items: center;
-justify-content: space-between;
-position: sticky;
-top: 0;
-z-index: 100;
-border-bottom: 1px solid var(--border);
-}
-
-.logo-img {
-    height: 50px;
-    width: auto;
-    display: block;
-}
-
-@media (max-width: 768px) {
-    .logo-img { height: 40px; }
-}
-
-.nav-wrapper { display: flex; align-items: center; gap: 16px; }
-.nav-menu { display: flex; gap: 4px; list-style: none; align-items: center; }
-.nav-menu > li { position: relative; }
-.nav-menu > li > a {
-display: block;
-padding: 10px 16px;
-color: var(--text-dark);
-text-decoration: none;
-font-size: 16px;
-font-weight: 500;
-transition: color 0.3s;
-}
-.nav-menu > li > a:hover { color: var(--accent); }
-
-.home-icon-btn {
-font-size: 20px !important;
-padding: 10px 12px !important;
-}
-
-.has-dropdown > a::after {
-content: ' ▾';
-font-size: 12px;
-margin-left: 2px;
-}
-
-.dropdown {
-position: absolute;
-top: 100%;
-left: 0;
-background: white;
-min-width: 220px;
-box-shadow: 0 8px 30px rgba(0,0,0,0.08);
-border-radius: 8px;
-list-style: none;
-padding: 8px 0;
-opacity: 0;
-visibility: hidden;
-transform: translateY(10px);
-transition: all 0.3s;
-border: 1px solid var(--border);
-}
-
-.has-dropdown:hover .dropdown {
-opacity: 1;
-visibility: visible;
-transform: translateY(0);
-}
-
-.dropdown li a {
-display: block;
-padding: 10px 20px;
-color: var(--text-dark);
-text-decoration: none;
-font-size: 15px;
-}
-
-.dropdown li a:hover {
-background: var(--bg-cream);
-color: var(--accent);
-}
-
-.lang-toggle {
-background: transparent;
-border: 1px solid var(--border);
-padding: 8px 16px;
-border-radius: 20px;
-color: var(--text-dark);
-font-size: 14px;
-font-weight: 500;
-cursor: pointer;
-display: flex;
-align-items: center;
-gap: 6px;
-transition: all 0.3s;
-}
-
-.lang-toggle:hover {
-background: var(--text-dark);
-color: white;
-border-color: var(--text-dark);
-}
-
-.mobile-menu-btn {
-display: none;
-background: none;
-border: none;
-font-size: 26px;
-cursor: pointer;
-color: var(--text-dark);
-}
-
-.mobile-nav {
-position: fixed;
-top: 0;
-left: 0;
-width: 85%;
-max-width: 320px;
-height: 100vh;
-background: white;
-z-index: 200;
-transform: translateX(-100%);
-transition: transform 0.3s ease;
-overflow-y: auto;
-padding: 20px;
-box-shadow: 4px 0 20px rgba(0,0,0,0.1);
-}
-
-.mobile-nav.active { transform: translateX(0); }
-
-.mobile-nav-overlay {
-display: none;
-position: fixed;
-top: 0; left: 0;
-width: 100%; height: 100vh;
-background: rgba(0,0,0,0.5);
-z-index: 150;
-}
-
-.mobile-nav-overlay.active { display: block; }
-
-.mobile-nav-close {
-background: none;
-border: none;
-font-size: 26px;
-color: var(--text-dark);
-cursor: pointer;
-margin-bottom: 20px;
-}
-
-.mobile-menu-list { list-style: none; }
-.mobile-menu-list > li { border-bottom: 1px solid var(--border); }
-
-.mobile-link {
-display: flex;
-justify-content: space-between;
-align-items: center;
-padding: 15px 10px;
-color: var(--text-dark);
-text-decoration: none;
-font-size: 17px;
-font-weight: 500;
-cursor: pointer;
-}
-
-.mobile-link .arrow { font-size: 11px; transition: transform 0.3s; }
-.mobile-has-sub.open .arrow { transform: rotate(180deg); color: var(--accent); }
-
-.mobile-submenu {
-max-height: 0;
-overflow: hidden;
-background: var(--bg-cream);
-transition: max-height 0.3s;
-list-style: none;
-}
-
-.mobile-has-sub.open .mobile-submenu { max-height: 500px; }
-
-.mobile-submenu li a {
-display: block;
-padding: 12px 25px;
-color: var(--text-muted);
-text-decoration: none;
-font-size: 15px;
-}
-
-.mobile-submenu li a:hover { color: var(--accent); }
-
-/* CATEGORY HERO */
+/* ============ CATEGORY HERO ============ */
 .category-hero { padding: 0px 0 10px; text-align: center; }
 .category-tag {
-display: inline-flex; align-items: center; gap: 8px;
-background: white; border: 1px solid var(--border);
-padding: 8px 20px; border-radius: 30px;
-font-size: 12px; color: var(--text-muted);
-letter-spacing: 3px; margin-bottom: 32px;
-text-transform: uppercase;
+    display: inline-flex; align-items: center; gap: 8px;
+    background: white; border: 1px solid var(--border);
+    padding: 8px 20px; border-radius: 30px;
+    font-size: 12px; color: var(--text-muted);
+    letter-spacing: 3px; margin-bottom: 32px;
+    text-transform: uppercase;
 }
 .category-tag .icon { color: var(--accent); }
-.category-title { font-size: 80px; line-height: 1.1; color: var(--text-dark); margin-bottom: 16px; font-weight: 400; }
+.category-title {
+    font-size: 80px; line-height: 1.1;
+    color: var(--text-dark); margin-bottom: 16px;
+    font-weight: 500;
+    font-family: 'Cormorant Garamond', serif;
+}
 .category-subtitle {
-display: flex; align-items: center; justify-content: center; gap: 20px;
-color: var(--text-muted); font-style: italic;
-font-family: 'Tiro Devanagari Hindi', serif;
-font-size: 22px; margin-bottom: 32px;
+    display: flex; align-items: center; justify-content: center; gap: 20px;
+    color: var(--text-muted); font-style: italic;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 22px; margin-bottom: 32px;
 }
 .category-subtitle::before, .category-subtitle::after {
-content: ''; width: 60px; height: 1px; background: var(--border);
+    content: ''; width: 60px; height: 1px; background: var(--border);
 }
 .category-desc { font-size: 18px; color: var(--text-muted); max-width: 700px; margin: 0 auto; line-height: 1.7; }
 
-/* CARDS */
+/* ============ FESTIVAL CARDS (3-column with body) ============ */
 .cards-section { padding: 40px 0 20px; }
-.cards-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
-.content-card {
-position: relative; aspect-ratio: 3/4; border-radius: 16px;
-overflow: hidden; cursor: pointer; text-decoration: none; color: white;
-transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.5s ease;
-display: block;
-}
-.content-card:hover { transform: translateY(-8px) scale(1.01); box-shadow: 0 25px 50px rgba(0,0,0,0.2); }
-.content-card img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.7s cubic-bezier(0.4, 0, 0.2, 1); }
-.content-card:hover img { transform: scale(1.09); }
-
-.card-badge {
-position: absolute; top: 12px; left: 12px;
-background: rgba(255,255,255,0.95); color: var(--text-dark);
-padding: 4px 12px; border-radius: 15px;
-font-size: 11px; font-weight: 600;
-display: flex; align-items: center; gap: 4px;
-z-index: 2; letter-spacing: 1px;
-}
-
-.card-overlay {
-position: absolute; bottom: 0; left: 0; right: 0;
-background: linear-gradient(to top, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.7) 50%, transparent 100%);
-padding: 30px 16px 16px; color: white;
-transition: padding 0.4s ease; z-index: 2;
-}
-.content-card:hover .card-overlay { padding-bottom: 24px; }
-
-.card-title { font-size: 22px; font-weight: 700; margin-bottom: 8px; line-height: 1.3; font-family: 'Tiro Devanagari Hindi', serif; }
-.card-desc { font-size: 13px; opacity: 0.85; line-height: 1.5; }
-.card-read-more {
-font-size: 13px; max-height: 0; overflow: hidden; opacity: 0;
-transition: max-height 0.4s ease, opacity 0.3s ease 0.1s, margin-top 0.4s ease;
-display: flex; align-items: center; gap: 4px; margin-top: 0;
-}
-.content-card:hover .card-read-more { opacity: 1; max-height: 30px; margin-top: 10px; }
-
-  /* FOOTER */
-footer { background: var(--bg-light); padding: 40px 0 30px; border-top: 1px solid var(--border); }
-.footer-logo { height: 60px; width: auto; display: block; }
-@media (max-width: 768px) { .footer-logo { height: 50px; } }
-
-.footer-grid {
-display: grid;
-grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
-gap: 60px;
-margin-bottom: 50px;
-padding-bottom: 50px;
-border-bottom: 1px solid var(--border);
-}
-.footer-about { color: var(--text-muted); font-size: 14px; line-height: 1.7; margin: 20px 0; }
-.footer-col-title { font-family: 'Tiro Devanagari Hindi', serif; font-size: 22px; margin-bottom: 24px; color: var(--text-dark); }
-.footer-links { list-style: none; }
-.footer-links li { margin-bottom: 12px; }
-.footer-links a { color: var(--text-muted); text-decoration: none; font-size: 15px; transition: color 0.3s; }
-.footer-links a:hover { color: var(--accent); }
-.footer-bottom { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; color: var(--text-muted); font-size: 14px; }
-
-/* RESPONSIVE */
-@media (max-width: 1200px) {
-.container { padding: 0 40px; }
-.main-header { padding: 18px 40px; }
-.nav-menu > li > a { padding: 10px 12px; font-size: 15px; }
-.cards-grid { grid-template-columns: repeat(4, 1fr); }
-}
-
-@media (max-width: 1024px) {
-.container { padding: 0 80px; }
-.main-header { padding: 18px 80px; }
-.category-hero { padding: 50px 0 30px; }
-.category-title { font-size: 60px; }
-.category-subtitle { font-size: 18px; }
-.category-desc { font-size: 16px; }
-.cards-grid { grid-template-columns: repeat(3, 1fr); gap: 18px; }
-.footer-grid { grid-template-columns: 1fr 1fr; gap: 40px; }
-}
-
-@media (max-width: 768px) {
-.container { padding: 0 30px; }
-.main-header { padding: 14px 30px; }
-.nav-menu { display: none; }
-.mobile-menu-btn { display: block; }
-.lang-toggle { padding: 6px 12px; font-size: 13px; }
-.category-hero { padding: 30px 0 20px; }
-.category-title { font-size: 40px; }
-.category-tag { font-size: 10px; letter-spacing: 2px; padding: 6px 14px; margin-bottom: 24px; }
-.category-subtitle { font-size: 16px; gap: 12px; }
-.category-subtitle::before, .category-subtitle::after { width: 40px; }
-.category-desc { font-size: 15px; }
-.cards-section { padding: 30px 0 60px; }
-.cards-grid { grid-template-columns: repeat(2, 1fr); gap: 14px; }
-.card-title { font-size: 16px; }
-.card-desc { font-size: 11px; }
-.card-badge { font-size: 10px; padding: 3px 8px; top: 8px; left: 8px; }
-.card-overlay { padding: 20px 12px 12px; }
-.footer-grid { grid-template-columns: 1fr; gap: 35px; padding-bottom: 35px; }
-.footer-bottom { flex-direction: column; text-align: center; gap: 16px; }
-}
-
-@media (max-width: 480px) {
-.container { padding: 0 16px; }
-.main-header { padding: 12px 16px; }
-.category-title { font-size: 32px; }
-.category-subtitle { font-size: 14px; }
-.category-desc { font-size: 14px; }
-.card-title { font-size: 14px; }
-.lang-toggle { padding: 5px 10px; font-size: 12px; }
-}
-
-/* DIVINE PLACES STYLE CARDS - 3 column */
-.cards-grid { grid-template-columns: repeat(3, 1fr) !important; gap: 30px !important; }
+.cards-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; }
 
 .content-card {
-    aspect-ratio: auto !important;
-    background: white !important;
-    color: var(--text-dark) !important;
-    border: 1px solid var(--border) !important;
-    display: flex !important;
-    flex-direction: column !important;
+    background: white;
+    color: var(--text-dark);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    overflow: hidden;
+    cursor: pointer;
+    text-decoration: none;
+    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.5s ease;
+    display: flex;
+    flex-direction: column;
+}
+.content-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
 }
 
-.content-card .card-img-wrap {
+.card-img-wrap {
     position: relative;
     width: 100%;
     height: 280px;
     overflow: hidden;
 }
-
 .content-card img {
-    width: 100% !important;
-    height: 100% !important;
-    object-fit: cover !important;
+    width: 100%; height: 100%; object-fit: cover;
+    transition: transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
 }
+.content-card:hover img { transform: scale(1.05); }
 
 .card-badge {
     position: absolute;
@@ -422,20 +138,20 @@ border-bottom: 1px solid var(--border);
     gap: 6px;
 }
 
-.card-body {
-    padding: 24px;
-}
+.card-body { padding: 24px; }
 
-.content-card .card-title {
-    font-size: 26px !important;
-    color: var(--text-dark) !important;
+.card-title {
+    font-size: 26px;
+    color: var(--text-dark);
     margin-bottom: 12px;
+    line-height: 1.3;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 600;
 }
 
-.content-card .card-desc {
-    font-size: 14px !important;
-    color: var(--text-muted) !important;
-    opacity: 1 !important;
+.card-desc {
+    font-size: 14px;
+    color: var(--text-muted);
     line-height: 1.7;
     margin-bottom: 20px;
 }
@@ -451,137 +167,50 @@ border-bottom: 1px solid var(--border);
     gap: 8px;
 }
 
-.content-card:hover {
-    transform: translateY(-6px) !important;
-    box-shadow: 0 20px 40px rgba(0,0,0,0.1) !important;
-}
-
-.content-card:hover img {
-    transform: scale(1.05) !important;
+/* ============ RESPONSIVE ============ */
+@media (max-width: 1200px) {
+    .container { padding: 0 40px; }
 }
 
 @media (max-width: 1024px) {
-    .cards-grid { grid-template-columns: repeat(2, 1fr) !important; gap: 20px !important; }
-    .content-card .card-img-wrap { height: 240px; }
+    .container { padding: 0 80px; }
+    .category-hero { padding: 50px 0 30px; }
+    .category-title { font-size: 60px; }
+    .category-subtitle { font-size: 18px; }
+    .category-desc { font-size: 16px; }
+    .cards-grid { grid-template-columns: repeat(2, 1fr); gap: 20px; }
+    .card-img-wrap { height: 240px; }
 }
 
 @media (max-width: 768px) {
-    .cards-grid { grid-template-columns: 1fr !important; gap: 20px !important; }
-    .content-card .card-img-wrap { height: 220px; }
-    .content-card .card-title { font-size: 22px !important; }
+    .container { padding: 0 30px; }
+    .category-hero { padding: 30px 0 20px; }
+    .category-title { font-size: 40px; }
+    .category-tag { font-size: 10px; letter-spacing: 2px; padding: 6px 14px; margin-bottom: 24px; }
+    .category-subtitle { font-size: 16px; gap: 12px; }
+    .category-subtitle::before, .category-subtitle::after { width: 40px; }
+    .category-desc { font-size: 15px; }
+    .cards-section { padding: 30px 0 60px; }
+    .cards-grid { grid-template-columns: 1fr; gap: 20px; }
+    .card-img-wrap { height: 220px; }
+    .card-title { font-size: 22px; }
     .card-body { padding: 20px; }
 }
 
-body { font-family: 'Inter', sans-serif; }
-h1, h2, h3 { font-family: 'Cormorant Garamond', serif; font-weight: 500; }
-.content-card .card-title { font-family: 'Cormorant Garamond', serif !important; font-weight: 600 !important; }
-.category-title { font-weight: 500; }
-.category-subtitle { font-family: 'Cormorant Garamond', serif; }
-.footer-col-title { font-family: 'Cormorant Garamond', serif; font-weight: 600; }
-.top-bar { font-family: 'Inter', sans-serif; }
-
+@media (max-width: 480px) {
+    .container { padding: 0 16px; }
+    .category-title { font-size: 32px; }
+    .category-subtitle { font-size: 14px; }
+    .category-desc { font-size: 14px; }
+}
 </style>
 </head>
 <body>
 
-<div class="top-bar">
-🙏 Thank you for visiting our website - Our mission is to keep every devotee connected with the divine 🙏
-</div>
+<!-- ============ HEADER PLACEHOLDER ============ -->
+<div id="header-placeholder"></div>
 
-<header class="main-header">
-<a href="/en/" class="logo">
-    <img src="https://res.cloudinary.com/ddf8equjt/image/upload/v1778996615/c52aed3d-c26d-48f7-8ace-8bb74f971108_ve8ab0.png" alt="Bhajan Lok" class="logo-img">
-</a>
-
-<div class="nav-wrapper">
-<nav>
-<ul class="nav-menu">
-<li><a href="/en/" class="home-icon-btn"><i class="fa-solid fa-house"></i></a></li>
-<li class="has-dropdown">
-<a href="/en/aarti/">Aarti</a>
-<ul class="dropdown">
-<li><a href="/aarti/hanuman/">Hanuman Aarti</a></li>
-<li><a href="/aarti/ganesh/">Ganesh Aarti</a></li>
-<li><a href="/aarti/shiv/">Shiv Aarti</a></li>
-<li><a href="/en/aarti/">All Aartis →</a></li>
-</ul>
-</li>
-<li class="has-dropdown">
-<a href="/en/chalisa/">Chalisa</a>
-<ul class="dropdown">
-<li><a href="/chalisa/hanuman/">Hanuman Chalisa</a></li>
-<li><a href="/chalisa/durga/">Durga Chalisa</a></li>
-<li><a href="/en/chalisa/">All Chalisas →</a></li>
-</ul>
-</li>
-<li class="has-dropdown">
-<a href="/en/bhajan/">Bhajan</a>
-<ul class="dropdown">
-<li><a href="/bhajan/krishna/">Krishna Bhajan</a></li>
-<li><a href="/en/bhajan/">All Bhajans →</a></li>
-</ul>
-</li>
-<li class="has-dropdown">
-<a href="/en/festivals/">Festivals</a>
-<ul class="dropdown">
-<li><a href="/festivals/diwali/">Diwali</a></li>
-<li><a href="/festivals/navratri/">Navratri</a></li>
-<li><a href="/en/festivals/">All Festivals →</a></li>
-</ul>
-</li>
-<li class="has-dropdown">
-<a href="/en/more/">More</a>
-<ul class="dropdown">
-<li><a href="/en/temples/">Temples</a></li>
-<li><a href="/en/gods/">Deities</a></li>
-<li><a href="/en/vrat-katha/">Vrat Katha</a></li>
-<li><a href="/en/mantra/">Mantras/Shlokas</a></li>
-<li><a href="/en/stotra/">Stotras & Stutis</a></li>
-<li><a href="/en/blog/">Blog</a></li>
-</ul>
-</li>
-</ul>
-</nav>
-
-<button class="lang-toggle" onclick="window.location.href='/festivals/'">🌐 हिं</button>
-<button class="mobile-menu-btn" onclick="toggleMobileMenu()">☰</button>
-</div>
-</header>
-
-<div class="mobile-nav-overlay" onclick="toggleMobileMenu()"></div>
-<nav class="mobile-nav" id="mobileNav">
-<button class="mobile-nav-close" onclick="toggleMobileMenu()">✕</button>
-<ul class="mobile-menu-list">
-<li><a href="/en/" class="mobile-link"><i class="fa-solid fa-house"></i> Home</a></li>
-<li class="mobile-has-sub">
-<a href="#" class="mobile-link" onclick="toggleMobileSub(this); return false;">Aarti <span class="arrow">▼</span></a>
-<ul class="mobile-submenu">
-<li><a href="/aarti/hanuman/">Hanuman Aarti</a></li>
-<li><a href="/aarti/ganesh/">Ganesh Aarti</a></li>
-<li><a href="/en/aarti/">All Aartis →</a></li>
-</ul>
-</li>
-<li class="mobile-has-sub">
-<a href="#" class="mobile-link" onclick="toggleMobileSub(this); return false;">Chalisa <span class="arrow">▼</span></a>
-<ul class="mobile-submenu">
-<li><a href="/chalisa/hanuman/">Hanuman Chalisa</a></li>
-<li><a href="/en/chalisa/">All Chalisas →</a></li>
-</ul>
-</li>
-<li><a href="/en/bhajan/" class="mobile-link">Bhajan</a></li>
-<li><a href="/en/festivals/" class="mobile-link">Festivals</a></li>
-<li><a href="/en/temples/" class="mobile-link">Temples</a></li>
-<li><a href="/en/gods/" class="mobile-link">Deities</a></li>
-<li><a href="/en/vrat-katha/" class="mobile-link">Vrat Katha</a></li>
-<li><a href="/en/stotra/" class="mobile-link">Stotras & Stutis</a></li>
-<li><a href="/en/mantra/" class="mobile-link">Mantras & Shlokas</a></li>
-<li><a href="/en/blog/" class="mobile-link">Blog</a></li>
-</ul>
-</nav>
-
-<!-- ============================================ -->
-<!-- ============ CATEGORY HERO TITLE ============ -->
-<!-- ============================================ -->
+<!-- ============ CATEGORY HERO ============ -->
 <section class="category-hero container">
 <br><span class="category-tag"><i class="fa-solid fa-calendar-day icon"></i> SACRED CELEBRATIONS</span>
 <h1 class="category-title">Indian Festivals</h1>
@@ -589,9 +218,7 @@ h1, h2, h3 { font-family: 'Cormorant Garamond', serif; font-weight: 500; }
 <p class="category-desc">Explore the glory of India's sacred festivals — their history, traditions, and spiritual significance.</p><br>
 </section>
 
-<!-- ============================================ -->
-<!-- ============ CARDS GRID ==================== -->
-<!-- ============================================ -->
+<!-- ============ FESTIVAL CARDS ============ -->
 <section class="cards-section container">
 <div class="cards-grid">
 
@@ -607,88 +234,33 @@ h1, h2, h3 { font-family: 'Cormorant Garamond', serif; font-weight: 500; }
 </div>
 </a>
 
-
 </div>
 </section><br>
 
-<footer>
-<div class="container">
-<div class="footer-grid">
+<!-- ============ FOOTER PLACEHOLDER ============ -->
+<div id="footer-placeholder"></div>
 
-<div>
-<div style="margin-bottom: 16px;">
-    <img src="https://res.cloudinary.com/ddf8equjt/image/upload/v1778996615/c52aed3d-c26d-48f7-8ace-8bb74f971108_ve8ab0.png" alt="Bhajan Lok" class="footer-logo">
-</div>
-<p class="footer-about">A spiritual platform dedicated to bringing the sacred traditions of Sanatan culture to every devotee in a simple, beautiful and digital form.</p>
-</div>
-
-<div>
-<h4 class="footer-col-title">Prayers</h4>
-<ul class="footer-links">
-<li><a href="/en/aarti/">Aarti</a></li>
-<li><a href="/en/chalisa/">Chalisa</a></li>
-<li><a href="/en/vrat-katha/">Vrat Katha</a></li>
-<li><a href="/en/bhajan/">Bhajan</a></li>
-<li><a href="/en/mantra/">Mantra</a></li>
-</ul>
-</div>
-
-<div>
-<h4 class="footer-col-title">Aarti</h4>
-<ul class="footer-links">
-<li><a href="/aarti/ganesh/">Ganesh Aarti</a></li>
-<li><a href="/aarti/krishna/">Krishna Aarti</a></li>
-<li><a href="/aarti/durga/">Durga Aarti</a></li>
-<li><a href="/aarti/hanuman/">Hanuman Aarti</a></li>
-<li><a href="/aarti/ram/">Ram Aarti</a></li>
-</ul>
-</div>
-
-<div>
-<h4 class="footer-col-title">Chalisa</h4>
-<ul class="footer-links">
-<li><a href="/chalisa/hanuman/">Hanuman Chalisa</a></li>
-<li><a href="/chalisa/ram/">Ram Chalisa</a></li>
-<li><a href="/chalisa/durga/">Durga Chalisa</a></li>
-<li><a href="/chalisa/shiv/">Shiv Chalisa</a></li>
-<li><a href="/chalisa/vishnu/">Vishnu Chalisa</a></li>
-</ul>
-</div>
-
-<div>
-<h4 class="footer-col-title">Deities</h4>
-<ul class="footer-links">
-<li><a href="/gods/ganesh/">Ganesh</a></li>
-<li><a href="/gods/ram/">Ram</a></li>
-<li><a href="/gods/hanuman/">Hanuman</a></li>
-<li><a href="/gods/vishnu/">Vishnu</a></li>
-<li><a href="/gods/durga/">Durga</a></li>
-</ul>
-</div>
-
-</div>
-
-<div class="footer-bottom">
-<div>© 2026 Dharma Path. All rights reserved.</div>
-</div>
-</div>
-</footer>
-
+<!-- ============ HEADER + FOOTER LOADER ============ -->
 <script>
-function toggleMobileMenu() {
-const nav = document.getElementById('mobileNav');
-const overlay = document.querySelector('.mobile-nav-overlay');
-nav.classList.toggle('active');
-overlay.classList.toggle('active');
-}
+fetch('/header.html')
+    .then(res => res.text())
+    .then(html => {
+        document.getElementById('header-placeholder').innerHTML = html;
+        document.querySelectorAll('#header-placeholder script').forEach(oldScript => {
+            const newScript = document.createElement('script');
+            newScript.textContent = oldScript.textContent;
+            oldScript.parentNode.replaceChild(newScript, oldScript);
+        });
+    })
+    .catch(err => console.error('Header load failed:', err));
 
-function toggleMobileSub(el) {
-const parent = el.parentElement;
-document.querySelectorAll('.mobile-has-sub.open').forEach(item => {
-if (item !== parent) item.classList.remove('open');
-});
-parent.classList.toggle('open');
-}
+fetch('/footer.html')
+    .then(res => res.text())
+    .then(html => {
+        document.getElementById('footer-placeholder').innerHTML = html;
+    })
+    .catch(err => console.error('Footer load failed:', err));
 </script>
+
 </body>
 </html>
