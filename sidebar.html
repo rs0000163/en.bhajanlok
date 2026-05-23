@@ -1,0 +1,330 @@
+<!-- ============================================================
+     SIDEBAR COMPONENT (English version for en.bhajanlok.in)
+     Self-contained: HTML + CSS
+     ============================================================ -->
+
+<style>
+/* ---------- SIDEBAR ---------- */
+.suggested-sidebar {
+    background: transparent;
+    font-family: 'Inter', sans-serif;
+}
+
+.sidebar-section {
+    background: white;
+    border: 1px solid var(--border, #e5e0d3);
+    border-radius: 16px;
+    padding: 22px 20px;
+    margin-bottom: 20px;
+}
+
+.sidebar-section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 18px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid var(--border, #e5e0d3);
+}
+
+.sidebar-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--text-dark, #1a2332);
+    line-height: 1;
+}
+
+.sidebar-view-all {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: var(--accent, #c89853);
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: color 0.3s;
+    white-space: nowrap;
+}
+.sidebar-view-all:hover { color: var(--accent-dark, #8a4a0a); }
+
+/* Mini cards (rows) */
+.sidebar-list { list-style: none; padding: 0; margin: 0; }
+.sidebar-list li { margin-bottom: 12px; }
+.sidebar-list li:last-child { margin-bottom: 0; }
+
+.sidebar-mini-card {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    color: var(--text-dark, #1a2332);
+    padding: 6px;
+    border-radius: 10px;
+    transition: background 0.3s;
+}
+.sidebar-mini-card:hover { background: var(--bg-cream, #faf8f3); }
+
+.sidebar-mini-img {
+    width: 56px;
+    height: 56px;
+    border-radius: 10px;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.sidebar-mini-info {
+    flex: 1;
+    min-width: 0;
+}
+.sidebar-mini-name {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 1.3;
+    color: var(--text-dark, #1a2332);
+    margin-bottom: 3px;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.sidebar-mini-meta {
+    font-size: 11px;
+    color: var(--text-muted, #6b7280);
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+@media (max-width: 1024px) {
+    .sidebar-section { padding: 20px 18px; }
+}
+</style>
+
+<!-- =========================================================
+     AARTI section
+     ========================================================= -->
+<div class="sidebar-section">
+    <div class="sidebar-section-header">
+        <h3 class="sidebar-title">Suggested Aartis</h3>
+        <a href="/aarti/" class="sidebar-view-all">All →</a>
+    </div>
+    <ul class="sidebar-list">
+        <li>
+            <a href="/aarti/hanuman/" class="sidebar-mini-card">
+                <img src="https://res.cloudinary.com/ddf8equjt/image/upload/v1778937366/7400ed8f9c0be8bc0b4fb445d20440a8_xplr8n.jpg" alt="Hanuman Aarti" class="sidebar-mini-img">
+                <div class="sidebar-mini-info">
+                    <div class="sidebar-mini-name">Hanuman Aarti</div>
+                    <div class="sidebar-mini-meta">AARTI</div>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="/aarti/krishna/" class="sidebar-mini-card">
+                <img src="https://res.cloudinary.com/ddf8equjt/image/upload/v1778937366/4bd271873c836e610c6b10b1166dd09c_sw0yyo.jpg" alt="Krishna Aarti" class="sidebar-mini-img">
+                <div class="sidebar-mini-info">
+                    <div class="sidebar-mini-name">Krishna Aarti</div>
+                    <div class="sidebar-mini-meta">AARTI</div>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="/aarti/shiv/" class="sidebar-mini-card">
+                <img src="https://res.cloudinary.com/ddf8equjt/image/upload/v1778937366/540865bfa0298dd49d85783e94e19ee2_fshkso.jpg" alt="Shiv Aarti" class="sidebar-mini-img">
+                <div class="sidebar-mini-info">
+                    <div class="sidebar-mini-name">Shiv Aarti</div>
+                    <div class="sidebar-mini-meta">AARTI</div>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="/aarti/ganesh/" class="sidebar-mini-card">
+                <img src="https://res.cloudinary.com/ddf8equjt/image/upload/v1778937367/ec417381c72a40eaa4c2c755a70695ec_oso3ma.jpg" alt="Ganesh Aarti" class="sidebar-mini-img">
+                <div class="sidebar-mini-info">
+                    <div class="sidebar-mini-name">Ganesh Aarti</div>
+                    <div class="sidebar-mini-meta">AARTI</div>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="/aarti/durga/" class="sidebar-mini-card">
+                <img src="https://res.cloudinary.com/ddf8equjt/image/upload/v1778937366/b22d611884d29c4f71c1d95a753d5029_kd7xhh.jpg" alt="Durga Aarti" class="sidebar-mini-img">
+                <div class="sidebar-mini-info">
+                    <div class="sidebar-mini-name">Durga Aarti</div>
+                    <div class="sidebar-mini-meta">AARTI</div>
+                </div>
+            </a>
+        </li>
+    </ul>
+</div>
+
+<!-- =========================================================
+     CHALISA section
+     ========================================================= -->
+<div class="sidebar-section">
+    <div class="sidebar-section-header">
+        <h3 class="sidebar-title">Suggested Chalisas</h3>
+        <a href="/chalisa/" class="sidebar-view-all">All →</a>
+    </div>
+    <ul class="sidebar-list">
+        <li>
+            <a href="/chalisa/hanuman/" class="sidebar-mini-card">
+                <img src="https://res.cloudinary.com/ddf8equjt/image/upload/v1778935472/fe411e082eda6a74abe20c9dd06cb777_kfwi98.jpg" alt="Hanuman Chalisa" class="sidebar-mini-img">
+                <div class="sidebar-mini-info">
+                    <div class="sidebar-mini-name">Hanuman Chalisa</div>
+                    <div class="sidebar-mini-meta">CHALISA</div>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="/chalisa/shiv/" class="sidebar-mini-card">
+                <img src="https://res.cloudinary.com/ddf8equjt/image/upload/v1778938786/428897a427e4c2e789b3a959766065e8_jwuedn.jpg" alt="Shiv Chalisa" class="sidebar-mini-img">
+                <div class="sidebar-mini-info">
+                    <div class="sidebar-mini-name">Shiv Chalisa</div>
+                    <div class="sidebar-mini-meta">CHALISA</div>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="/chalisa/durga/" class="sidebar-mini-card">
+                <img src="https://res.cloudinary.com/ddf8equjt/image/upload/v1778937061/67d47216d314bd33c5e40347be48cc93_r08flv.jpg" alt="Durga Chalisa" class="sidebar-mini-img">
+                <div class="sidebar-mini-info">
+                    <div class="sidebar-mini-name">Durga Chalisa</div>
+                    <div class="sidebar-mini-meta">CHALISA</div>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="/chalisa/ganesh/" class="sidebar-mini-card">
+                <img src="https://res.cloudinary.com/ddf8equjt/image/upload/v1778937061/73b838689b40459b03a014d9c41a7f14_ot3jmh.jpg" alt="Ganesh Chalisa" class="sidebar-mini-img">
+                <div class="sidebar-mini-info">
+                    <div class="sidebar-mini-name">Ganesh Chalisa</div>
+                    <div class="sidebar-mini-meta">CHALISA</div>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="/chalisa/ganga/" class="sidebar-mini-card">
+                <img src="https://res.cloudinary.com/ddf8equjt/image/upload/v1778937061/9c5c864689a813c75ab69b22cc4ebf2f_mazynk.jpg" alt="Ganga Chalisa" class="sidebar-mini-img">
+                <div class="sidebar-mini-info">
+                    <div class="sidebar-mini-name">Ganga Chalisa</div>
+                    <div class="sidebar-mini-meta">CHALISA</div>
+                </div>
+            </a>
+        </li>
+    </ul>
+</div>
+
+<!-- =========================================================
+     BHAJAN section
+     ========================================================= -->
+<div class="sidebar-section">
+    <div class="sidebar-section-header">
+        <h3 class="sidebar-title">Suggested Bhajans</h3>
+        <a href="/bhajan/" class="sidebar-view-all">All →</a>
+    </div>
+    <ul class="sidebar-list">
+        <li>
+            <a href="/bhajan/krishna/" class="sidebar-mini-card">
+                <img src="https://res.cloudinary.com/ddf8equjt/image/upload/v1778939002/3619372184ab779480e545a19b0169c3_ezbko4.jpg" alt="Achyutam Keshavam" class="sidebar-mini-img">
+                <div class="sidebar-mini-info">
+                    <div class="sidebar-mini-name">Achyutam Keshavam</div>
+                    <div class="sidebar-mini-meta">BHAJAN</div>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="/bhajan/ram/" class="sidebar-mini-card">
+                <img src="https://res.cloudinary.com/ddf8equjt/image/upload/v1778939002/74f1f1ed10f394f30645b11c6da95791_nvyjgm.jpg" alt="Ram Bhajan" class="sidebar-mini-img">
+                <div class="sidebar-mini-info">
+                    <div class="sidebar-mini-name">Ram Bhajan</div>
+                    <div class="sidebar-mini-meta">BHAJAN</div>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="/bhajan/shiv/" class="sidebar-mini-card">
+                <img src="https://res.cloudinary.com/ddf8equjt/image/upload/v1778937061/20d89b10b4dc6b1c603621dd86d246d9_bevbhi.jpg" alt="Shiv Bhajan" class="sidebar-mini-img">
+                <div class="sidebar-mini-info">
+                    <div class="sidebar-mini-name">Shiv Bhajan</div>
+                    <div class="sidebar-mini-meta">BHAJAN</div>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="/bhajan/hanuman/" class="sidebar-mini-card">
+                <img src="https://res.cloudinary.com/ddf8equjt/image/upload/v1778939002/74f1f1ed10f394f30645b11c6da95791_nvyjgm.jpg" alt="Hanuman Bhajan" class="sidebar-mini-img">
+                <div class="sidebar-mini-info">
+                    <div class="sidebar-mini-name">Hanuman Bhajan</div>
+                    <div class="sidebar-mini-meta">BHAJAN</div>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="/bhajan/durga/" class="sidebar-mini-card">
+                <img src="https://res.cloudinary.com/ddf8equjt/image/upload/v1778937061/67d47216d314bd33c5e40347be48cc93_r08flv.jpg" alt="Durga Bhajan" class="sidebar-mini-img">
+                <div class="sidebar-mini-info">
+                    <div class="sidebar-mini-name">Durga Bhajan</div>
+                    <div class="sidebar-mini-meta">BHAJAN</div>
+                </div>
+            </a>
+        </li>
+    </ul>
+</div>
+
+<!-- =========================================================
+     TEERTH STHAL (Temples) section
+     ========================================================= -->
+<div class="sidebar-section">
+    <div class="sidebar-section-header">
+        <h3 class="sidebar-title">Sacred Places</h3>
+        <a href="/temples/" class="sidebar-view-all">All →</a>
+    </div>
+    <ul class="sidebar-list">
+        <li>
+            <a href="/temples/kedarnath/" class="sidebar-mini-card">
+                <img src="https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=200" alt="Kedarnath" class="sidebar-mini-img">
+                <div class="sidebar-mini-info">
+                    <div class="sidebar-mini-name">Kedarnath</div>
+                    <div class="sidebar-mini-meta">HOLY SITE</div>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="/temples/badrinath/" class="sidebar-mini-card">
+                <img src="https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=200" alt="Badrinath" class="sidebar-mini-img">
+                <div class="sidebar-mini-info">
+                    <div class="sidebar-mini-name">Badrinath</div>
+                    <div class="sidebar-mini-meta">HOLY SITE</div>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="/temples/vaishno-devi/" class="sidebar-mini-card">
+                <img src="https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=200" alt="Vaishno Devi" class="sidebar-mini-img">
+                <div class="sidebar-mini-info">
+                    <div class="sidebar-mini-name">Vaishno Devi</div>
+                    <div class="sidebar-mini-meta">HOLY SITE</div>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="/temples/somnath/" class="sidebar-mini-card">
+                <img src="https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=200" alt="Somnath" class="sidebar-mini-img">
+                <div class="sidebar-mini-info">
+                    <div class="sidebar-mini-name">Somnath</div>
+                    <div class="sidebar-mini-meta">HOLY SITE</div>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="/temples/tirupati/" class="sidebar-mini-card">
+                <img src="https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=200" alt="Tirupati" class="sidebar-mini-img">
+                <div class="sidebar-mini-info">
+                    <div class="sidebar-mini-name">Tirupati</div>
+                    <div class="sidebar-mini-meta">HOLY SITE</div>
+                </div>
+            </a>
+        </li>
+    </ul>
+</div>
